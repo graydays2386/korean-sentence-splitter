@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from typing import List
-from .tokenizer import TOKENIZER
-from .constants import CONNECTIVE_ENDINGS, NOMINAL_PREDICATE_PATTERNS
+from .common.tokenizer import TOKENIZER
+from .common.constants import CONNECTIVE_ENDINGS, NOMINAL_PREDICATE_PATTERNS
 
 def _ending_based_splits(span: str) -> List[int]:
     """

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import re
 from typing import List
-from .constants import DISCOURSE_SPLIT_MARKERS
+from .common.constants import DISCOURSE_SPLIT_MARKERS
 
 def _find_marker_splits(span: str) -> List[int]:
     """

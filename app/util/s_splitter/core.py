@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from typing import List
-from .data_model import CandidateSpan
+from .common.data_model import CandidateSpan
 from .normalizer import _normalize
 from .basic_splitter import _basic_sentence_split
 from .marker_splitter import _find_marker_splits
@@ -55,4 +55,5 @@ def rule_based_candidate_split(text: str) -> List[CandidateSpan]:
                 )
             )
 
+    print(candidates)
     return candidates

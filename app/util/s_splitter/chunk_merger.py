@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from typing import List
-from .constants import MIN_CHUNK_CHARS, MIN_CHUNK_TOKENS
-from .token_counter import _token_count
+from .common.constants import MIN_CHUNK_CHARS, MIN_CHUNK_TOKENS
+from .common.token_counter import _token_count
 
 def _merge_too_small(chunks: List[str]) -> List[str]:
     """
