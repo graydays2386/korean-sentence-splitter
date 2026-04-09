@@ -57,7 +57,7 @@ result = rule_based_candidate_split(text)
 for span in result:
     print(span.text, span.start, span.end)
 
-**## Intended Use**
+## **Intended Use**
 - Knowledge management pipelines
 - Wiki / document preprocessing
 - Korean NLP experiments
