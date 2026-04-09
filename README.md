@@ -47,6 +47,11 @@ Each candidate span contains:
 - `start`
 - `end`
 
+## Intended Use
+- Knowledge management pipelines
+- Wiki / document preprocessing
+- Korean NLP experiments
+
 ## Example Usage
 ```python
 from app.util.s_splitter.core import rule_based_candidate_split
@@ -56,8 +61,3 @@ result = rule_based_candidate_split(text)
 
 for span in result:
     print(span.text, span.start, span.end)
-
-## **Intended Use**
-- Knowledge management pipelines
-- Wiki / document preprocessing
-- Korean NLP experiments
